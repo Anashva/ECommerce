@@ -21,8 +21,8 @@ It provides features like product listing, cart management, authentication, and 
 - **Frontend**: EJS, CSS, Bootstrap  
 - **Database**: MongoDB (Mongoose)  
 - **Authentication**: Passport.js / JWT  
-- **Payment Gateway**: PayU Money  
-
+- **Payment Gateway**: PayU Money
+  
 ---
 
 ## ⚙️ Installation & Setup
@@ -53,3 +53,11 @@ It provides features like product listing, cart management, authentication, and 
 6. **Open in browser**
    ```arduino
    http://localhost:8080
+
+---
+
+## 🌍 Deployment
+
+- **Deployed on Render**
+
+- 👉 **Live Demo: https://ecommerce-geyh.onrender.com**
