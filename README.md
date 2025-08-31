@@ -31,3 +31,25 @@ It provides features like product listing, cart management, authentication, and 
    ```bash
    git clone https://github.com/your-username/ecommerce-app.git
    cd ecommerce-app
+   
+2. **Install dependencies**
+   ```bash
+   npm install
+   
+3. **Set up environment variables (.env)**
+   ```env
+   PORT=8080
+   MONGO_URI=your_mongo_connection
+   MERCHANT_KEY=your_payu_key
+   MERCHANT_SALT=your_payu_salt
+   SESSION_SECRET=your_secret
+
+4. **Seed the database (optional)**
+   ```bash
+   node seed.js
+5. **Run the server**
+   ```bash
+   npm start
+6. **Open in browser**
+   ```arduino
+   http://localhost:8080
