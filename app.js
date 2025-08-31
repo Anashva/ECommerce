@@ -34,14 +34,18 @@ const dbURL = process.env.dbURL
 
 
 mongoose.set('strictQuery', true);
-mongoose.connect(dbURL)
-.then(()=>{
-    console.log("db connected successfully")
+mongoose.connect(dbURL, {
+    useNewUrlParser: true,       // parses the connection string correctly
+    useUnifiedTopology: true,    // enables the new Server Discovery and Monitoring engine
+    tls: true                     // forces TLS/SSL, required for Atlas
 })
-.catch((err)=>{
-    console.log("db error")
-    console.log(err)
+.then(() => {
+    console.log("DB connected successfully");
 })
+.catch((err) => {
+    console.log("DB connection error:");
+    console.error(err);
+});
 
 
 let secret = process.env.SECRET || 'weneedabettersecretkey';
